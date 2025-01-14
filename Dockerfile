@@ -9,7 +9,7 @@ ADD . .
 RUN echo > /opt/jumpserver/config.yml \
     && \
     if [ -n "${VERSION}" ]; then \
-        sed -i "s@VERSION = .*@VERSION = '${VERSION}'@g" apps/jumpserver/const.py; \
+    sed -i "s@VERSION = .*@VERSION = '${VERSION}'@g" apps/jumpserver/const.py; \
     fi
 
 RUN set -ex \
@@ -24,22 +24,22 @@ ENV LANG=en_US.UTF-8 \
     PATH=/opt/py3/bin:$PATH
 
 ARG DEPENDENCIES="                    \
-        libldap2-dev                  \
-        libx11-dev"
+    libldap2-dev                  \
+    libx11-dev"
 
 ARG TOOLS="                           \
-        cron                          \
-        ca-certificates               \
-        default-libmysqlclient-dev    \
-        openssh-client                \
-        sshpass                       \
-        bubblewrap"
+    cron                          \
+    ca-certificates               \
+    default-libmysqlclient-dev    \
+    openssh-client                \
+    sshpass                       \
+    bubblewrap"
 
 ARG APT_MIRROR=http://deb.debian.org
 
 RUN set -ex \
     && sed -i "s@http://.*.debian.org@${APT_MIRROR}@g" /etc/apt/sources.list \
-    && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && ln -sf /usr/share/zoneinfo/Asia/Bangkok /etc/localtime \
     && apt-get update > /dev/null \
     && apt-get -y install --no-install-recommends ${DEPENDENCIES} \
     && apt-get -y install --no-install-recommends ${TOOLS} \

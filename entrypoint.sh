@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 不能删掉 cleanup 会产生僵尸进程
+#ห้ามลบ cleanup มิฉะนั้นจะเกิดกระบวนการซอมบี้
 function cleanup()
 {
     local pids=`jobs -p`
