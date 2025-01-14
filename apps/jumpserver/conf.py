@@ -263,7 +263,7 @@ class Config(dict):
 
         'VAULT_HCP_HOST': '',
         'VAULT_HCP_TOKEN': '',
-        'VAULT_HCP_MOUNT_POINT': 'jumpserver',
+        'VAULT_HCP_MOUNT_POINT': 'BUDHOSP',
 
         'VAULT_AZURE_HOST': '',
         'VAULT_AZURE_CLIENT_ID': '',
@@ -283,9 +283,9 @@ class Config(dict):
         # Auth LDAP settings
         'AUTH_LDAP': False,
         'AUTH_LDAP_SERVER_URI': 'ldap://localhost:389',
-        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=jumpserver,dc=org',
+        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=budhosp,dc=org',
         'AUTH_LDAP_BIND_PASSWORD': '',
-        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=jumpserver,dc=org',
+        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=budhosp,dc=org',
         'AUTH_LDAP_SEARCH_FILTER': '(cn=%(user)s)',
         'AUTH_LDAP_START_TLS': False,
         'AUTH_LDAP_USER_ATTR_MAP': {"username": "cn", "name": "sn", "email": "mail"},
@@ -391,9 +391,9 @@ class Config(dict):
         'SAML2_SP_ADVANCED_SETTINGS': {
             "organization": {
                 "en": {
-                    "name": "JumpServer",
-                    "displayname": "JumpServer",
-                    "url": "https://jumpserver.org/"
+                    "name": "BUDHOSP",
+                    "displayname": "BUDHOSP",
+                    "url": "https://budhosp.go.th/"
                 }
             },
             "strict": True,
@@ -429,7 +429,7 @@ class Config(dict):
 
         'AUTH_PASSKEY': False,
         'FIDO_SERVER_ID': '',
-        'FIDO_SERVER_NAME': 'JumpServer',
+        'FIDO_SERVER_NAME': 'BUDHOSP',
 
         # 企业微信
         'AUTH_WECOM': False,
@@ -540,7 +540,7 @@ class Config(dict):
         'EMAIL_CUSTOM_USER_CREATED_BODY': _('Your account has been created successfully'),
 
         'OTP_VALID_WINDOW': 2,
-        'OTP_ISSUER_NAME': 'JumpServer',
+        'OTP_ISSUER_NAME': 'BUDHOSP',
         'EMAIL_SUFFIX': 'example.com',
 
         # Terminal配置
@@ -619,7 +619,7 @@ class Config(dict):
         'PERM_TREE_REGEN_INTERVAL': 1,
         'FLOWER_URL': "127.0.0.1:5555",
         'LANGUAGE_CODE': 'en',
-        'TIME_ZONE': 'Asia/Shanghai',
+        'TIME_ZONE': 'Asia/Bangkok',
         'FORCE_SCRIPT_NAME': '',
         'SESSION_COOKIE_SECURE': False,
         'DOMAINS': '',
@@ -662,8 +662,8 @@ class Config(dict):
         'TERMINAL_TELNET_REGEX': '',
 
         # 导航栏 帮助
-        'HELP_DOCUMENT_URL': 'https://docs.jumpserver.org/zh/v3/',
-        'HELP_SUPPORT_URL': 'https://www.jumpserver.org/support/',
+        'HELP_DOCUMENT_URL': 'https:/budhosp.go.th/',
+        'HELP_SUPPORT_URL': 'https://budhosp.go.th/',
 
         'FORGOT_PASSWORD_URL': '',
         'HEALTH_CHECK_TOKEN': '',
