@@ -8,7 +8,7 @@ from .base import INSTALLED_APPS, TEMPLATES
 from .. import const
 
 current_year = datetime.datetime.now().year
-corporation = f'FIT2CLOUD 飞致云 © 2014-{current_year}'
+corporation = f'BUDHOSP © 2024-{current_year}'
 
 XPACK_DIR = os.path.join(const.BASE_DIR, 'xpack')
 XPACK_DISABLED = os.environ.get('XPACK_ENABLED') in ['0', 'false', 'False', 'no', 'No']
