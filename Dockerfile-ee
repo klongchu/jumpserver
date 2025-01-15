@@ -6,14 +6,14 @@ FROM jumpserver/core:${VERSION}-ce
 COPY --from=build-xpack /opt/xpack /opt/jumpserver/apps/xpack
 
 ARG TOOLS="                           \
-        g++                           \
-        curl                          \
-        iputils-ping                  \
-        netcat-openbsd                \
-        nmap                          \
-        telnet                        \
-        vim                           \
-        wget"
+    g++                           \
+    curl                          \
+    iputils-ping                  \
+    netcat-openbsd                \
+    nmap                          \
+    telnet                        \
+    vim                           \
+    wget"
 
 RUN set -ex \
     && apt-get update \

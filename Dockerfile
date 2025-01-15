@@ -56,9 +56,10 @@ COPY --from=stage-build /usr/local/bin /usr/local/bin
 COPY --from=stage-build /opt/jumpserver/apps/libs/ansible/ansible.cfg /etc/ansible/
 
 WORKDIR /opt/jumpserver
-
+RUN chmod 777 ./entrypoint.sh
 VOLUME /opt/jumpserver/data
 
+RUN ls -la
 ENTRYPOINT ["./entrypoint.sh"]
 
 EXPOSE 8080

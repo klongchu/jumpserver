@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 .login_body {
     filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     -moz-background-size: 100% 100%;
@@ -19,12 +21,12 @@
     width: 100%;
 }
 
-.input_shadow-1{
-    box-shadow:-2px 5px 5px #9999
+.input_shadow-1 {
+    box-shadow: -2px 5px 5px #9999
 }
 
-.button-shadow{
-    box-shadow:-1px 3px 3px #9999 ;
+.button-shadow {
+    box-shadow: -1px 3px 3px #9999;
 }
 
 .contact-form .form-control-1 {
@@ -33,7 +35,7 @@
     box-shadow: none;
     color: #0c0c0c;
     height: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Helvetica Neue", ".PingFang SC", "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Sarabun", sans-serif;
     font-size: 14px;
     border-radius: 0;
 }
@@ -54,7 +56,7 @@
 .login-title {
     margin-top: 40px;
     text-align: left;
-    font-family: "Microsoft Yahei", sans-serif;
+    font-family: "Sarabun", sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -181,7 +183,9 @@
     border-color: #53C0FF;
 }
 
-.btn-login:active, .btn-login.active, .open > .dropdown-toggle.btn-login {
+.btn-login:active,
+.btn-login.active,
+.open>.dropdown-toggle.btn-login {
     color: #fff;
     background-color: #0D6FD1;
     border-color: #0D6FD1;
@@ -189,13 +193,13 @@
 
 .btn-login:active:hover,
 .btn-login.active:hover,
-.open > .dropdown-toggle.btn-login:hover,
+.open>.dropdown-toggle.btn-login:hover,
 .btn-login:active:focus,
 .btn-login.active:focus,
-.open > .dropdown-toggle.btn-login:focus,
+.open>.dropdown-toggle.btn-login:focus,
 .btn-login:active.focus,
 .btn-login.active.focus,
-.open > .dropdown-toggle.btn-login.focus {
+.open>.dropdown-toggle.btn-login.focus {
     color: #fff;
     background-color: #53C0FF;
     border-color: #53C0FF;
@@ -204,7 +208,7 @@
 
 .btn-login:active,
 .btn-login.active,
-.open > .dropdown-toggle.btn-login {
+.open>.dropdown-toggle.btn-login {
     background-image: none;
 }
 
@@ -243,7 +247,7 @@ fieldset[disabled] .btn-login.active {
     box-shadow: none;
     color: #0c0c0c;
     height: 38px;
-    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Helvetica Neue", ".PingFang SC", "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Sarabun", sans-serif;
     font-size: 14px;
     border-radius: 0;
 }
